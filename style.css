@@ -1,13 +1,12 @@
 .row{
-background: violet;
-border: black 2px;
+
 }
 
 .col{
   display: inline;
-  width:30px;
-  height:30px;
-  background: blue;
-  border: black 2px;
-  margin-left: 10px;
+  padding: 5px;
+  height:20px;
+  width:20px;
+  border: solid black;
+  font-size: 30px;
 }
