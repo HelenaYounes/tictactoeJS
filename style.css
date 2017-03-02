@@ -1,0 +1,13 @@
+.row{
+background: violet;
+border: black 2px;
+}
+
+.col{
+  display: inline;
+  width:30px;
+  height:30px;
+  background: blue;
+  border: black 2px;
+  margin-left: 10px;
+}
