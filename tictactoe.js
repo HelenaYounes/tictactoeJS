@@ -1,17 +1,25 @@
+var count= 0;
 var onLoad = function() {
   var board = document.querySelector('.tic');
   board.addEventListener('click', test);
-
-};
+}
 
 function test(e) {
 //  debugger;
-  // var n = e.target.dataset.num;
+// var n = e.target.dataset.num;
+ count++;
   var n = e.target.getAttribute('data-num');
-  if( n.innerHTML!='X' || n.innerHTML!='O'){
-    e.target.innerHTML = 'X';
+  if(count%2==0){
+    if( n.innerHTML == null ){
+      e.target.innerHTML = 'X';
+    }
   }
-  alert(n);
+  else{
+    if(n.innerHTML == null){
+      e.target.innerHTML = 'O';
+    }
+  }
+// alert(n);
 }
 
 window.addEventListener('load', onLoad);
