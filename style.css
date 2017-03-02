@@ -4,7 +4,7 @@
 .cell{
   display: inline;
   border: solid black 1px;
-  border-collapse: collapse;
+  border-collapse:collapse;
   width: 20px;
   height: 20px;
 }
