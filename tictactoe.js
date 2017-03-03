@@ -62,8 +62,8 @@ function checkNearbyCell(){
           alert('You win');
         }
       }
-     }
-   }
- }
+    }
+  }
+}
 
 window.addEventListener('load', onLoad);
