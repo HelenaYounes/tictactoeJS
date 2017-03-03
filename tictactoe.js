@@ -1,25 +1,35 @@
 var count= 0;
+var emptySymbol = '&nbsp;';
 var onLoad = function() {
   var board = document.querySelector('.tic');
   board.addEventListener('click', test);
 }
 
 function test(e) {
-//  debugger;
+ debugger;
 // var n = e.target.dataset.num;
  count++;
-  var n = e.target.getAttribute('data-num');
+  n = e.target.getAttribute('data-num');
   if(count%2==0){
-    if( n.innerHTML == null ){
+    if( e.target.innerHTML ==emptySymbol){
       e.target.innerHTML = 'X';
     }
   }
   else{
-    if(n.innerHTML == null){
+    if(e.target.innerHTML ==emptySymbol){
       e.target.innerHTML = 'O';
     }
   }
 // alert(n);
 }
+//
+// function isEmpty(e){
+//   if(e.target.innerHTML== ','){
+//     return true;
+//   }
+//   else{
+//     return false;
+//   }
+// }
 
 window.addEventListener('load', onLoad);

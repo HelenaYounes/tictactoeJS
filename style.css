@@ -1,10 +1,13 @@
 .row{
+  width: 10px;
+  height: 10px;
 
 }
-.cell{
-  display: inline;
-  border: solid black 1px;
-  border-collapse:collapse;
+.cells{
   width: 20px;
   height: 20px;
+  display: inline-block;
+  border: solid black 1px;
+  border-collapse:collapse;
+
 }
