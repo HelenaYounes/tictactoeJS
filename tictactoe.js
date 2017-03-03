@@ -1,7 +1,6 @@
 var count= 0;
 var emptySymbol = '&nbsp;';
 
-
 var onLoad = function() {
   var board = document.querySelector('.tic');
   board.addEventListener('click', test, checkNearbyCell);
@@ -12,12 +11,11 @@ var onLoad = function() {
 }
 
 function test(e) {
-// debugger;
 // var n = e.target.dataset.num;
 // var element = e.target.getAttribute('data-num');
- var i = 0;
- var j= 0;
- count++;
+  var i = 0;
+  var j= 0;
+  count++;
   n = e.target.getAttribute('data-num');
   var cellClicked = e.target;
   var content = cellClicked.innerHTML;
@@ -36,7 +34,6 @@ function test(e) {
 
 
 function reset(){
-  //debugger;
   var i = 0;
   var j = 0;
   var table = document.getElementById('myTable');
@@ -49,7 +46,6 @@ function reset(){
  }
 
 function checkNearbyCell(){
-  //debugger;
   var table = document. getElementById('myTable');
   for(i = 1; i<table.rows.length - 1; i++){
     var cellUp = table.rows[i-1];
@@ -65,9 +61,6 @@ function checkNearbyCell(){
         if(cell[j].innerHTML == cellDowm[j].innerHTML){
           alert('You win');
         }
-      }
-      else{
-
       }
      }
    }
